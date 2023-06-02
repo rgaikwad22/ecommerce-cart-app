@@ -1,0 +1,30 @@
+<header>
+    <nav class="nav-container">
+        <div class="nav-inline">
+            <i routerLink="/products" class="f-size fas fa-shipping-fast">&nbsp;</i>
+            <strong routerLink="/products" class="f-kart">IDEAMAGIX Cart-App</strong>
+            <div class="d-flex">
+                <input type="text" class="search-input form-control" (keyup)="search($event)"
+                    placeholder="Search products">
+                <span class="fas fa-search search-icon"></span>
+            </div>
+        </div>
+        <div class="navbar-links">
+            <div class="d-flex justify-content-center">
+                <a routerLink="/products" class="btn btn-light btn-login" href="">Products</a>
+            </div>
+            <div *ngIf="(isLogin); else authLinks">
+                <a routerLink="/login" class="btn btn-light btn-login" href="">Login</a>
+            </div>
+            <ng-template #authLinks>
+                <div>
+                    <a (click)="logOut()" class="btn btn-light btn-logout" href="">Logout</a>
+                </div>
+                <div routerLink="/cart" class="btn btn-danger d-flex">
+                    <i class="cart-f-size fas fa-cart-plus"></i>
+                    <div class="badge bg-primary">{{totalItem}}</div>
+                </div>
+            </ng-template>
+        </div>
+    </nav>
+</header>

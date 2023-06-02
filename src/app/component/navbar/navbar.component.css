@@ -1,0 +1,116 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 67px;
+    color: white;
+    background-color: #dc3545;
+}
+
+.nav-inline {
+    display: flex;
+    align-items: center;
+}
+
+.f-size {
+    font-size: 40px;
+}
+
+.f-kart {
+    min-width: 6rem;
+    font-size: 1.25rem;
+}
+
+.search-input {
+    width: 39vw;
+    height: 37px;
+    font-size: 17px;
+    font-family: inherit;
+    padding-left: 10px;
+    margin-left: 20px;
+    border-radius: 2px;
+    border: none;
+}
+
+.search-icon {
+    position: relative;
+    font-size: 20px;
+    top: 8px;
+    right: 40px;
+    color: #dc3545;
+}
+
+.btn-login {
+    width: 8rem;
+    padding: 3px;
+    margin-right: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 2px;
+    color: #dc3545;
+}
+
+.btn-logout {
+    width: 8rem;
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 2px;
+    color: #dc3545;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart-f-size {
+    font-size: 30px;
+}
+
+.badge {
+    height: 18px;
+    font-size: 10px;
+    top: 17px;
+    right: 13px;
+}
+
+@media screen and (max-width: 950px) {
+    .search-input {
+        width: 25vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .search-input {
+        width: 76vw;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+        gap: 1rem;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+    }
+
+    .nav-inline {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .search-icon {
+        right: 30px;
+    }
+
+    .btn-login {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,71 @@
+.card-top {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-clip: border-box;
+    word-wrap: break-word;
+    border-radius: .25rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    width: 64px;
+}
+
+.item {
+    text-align: center;
+    margin: 0px 30px;
+    cursor: pointer;
+}
+
+.img-jewellery {
+    width: 62px;
+    margin-top: 5px;
+}
+
+.item a:hover {
+    color: blue;
+}
+
+.card {
+    padding: 20px;
+    margin: 50px;
+}
+
+.card img {
+    width: 58%;
+    height: 200px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.text-overflow {
+    max-width: 100ch;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        text-align: center;
+        margin: 0px 10px;
+        cursor: pointer;
+    }
+
+    .card {
+        width: 22rem;
+        padding: 20px;
+        margin: 50px 10px 50px 11px;
+    }
+
+    .item {
+        margin: 0px 5px;
+    }
+}

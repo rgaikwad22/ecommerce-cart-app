@@ -1,0 +1,25 @@
+<div class="app-info-form">
+    <form class="info-form-container card shadow" [formGroup]="registerForm">
+        <p class="text-success" *ngIf="isLogin">You are login succesfully!</p>
+        <p class="text-danger" *ngIf="isLoginFailed">{{errorMsg}}</p>
+        <h2>Please provide your login details!</h2>
+        <div class="form-row">
+            <div class="form-group col-md-8 mt-2">
+                <label for="inputEmail">Username</label>
+                <input type="text" formControlName="username" class="form-control" placeholder="Enter Your Email">
+                <small *ngIf="username.errors?.['required'] && registerForm.controls.username.touched"
+                    class="text-danger">username is required.</small>
+                <small *ngIf="username.errors?.['email']" class="text-danger">Please enter valid username.</small>
+            </div>
+            <div class="form-group col-md-8 mt-2">
+                <label for="inputAddress">Password</label>
+                <input type="password" formControlName="password" class="form-control"
+                    placeholder="Enter your password">
+                <small *ngIf="password.errors?.['required'] && registerForm.controls.password.touched"
+                    class="text-danger">password is required.</small>
+            </div>
+        </div>
+        <button (click)="onSubmit()" type="submit" class="btn btn-danger mt-3 w-50"
+            [disabled]="!registerForm.valid">Submit</button>
+    </form>
+</div>

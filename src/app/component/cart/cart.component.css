@@ -1,0 +1,121 @@
+.card {
+    height: 60vh;
+    padding: 25px;
+    margin: 25px;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.center img {
+    width: 250px;
+    height: 162px;
+    text-decoration: none;
+    margin: 20px 0px;
+    border: none;
+    outline: none;
+    color: inherit;
+}
+
+
+h4,
+h6 {
+    font-weight: 400;
+}
+
+.center {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-table {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: none;
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+
+.center .btn {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 72px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.td-image {
+    width: 120px;
+}
+
+.td-descreption {
+    width: 25%;
+}
+
+.td-price {
+    width: 12%;
+}
+
+.td-name {
+    width: 12%;
+}
+
+@media screen and (max-width: 768px) {
+    .center {
+        top: 86%;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        width: 75vw;
+        height: 63vh;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .center img {
+        width: 170px;
+        height: 140px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .td-descreption {
+        width: 12%;
+        font-size: 10px;
+    }
+
+    .td-name {
+        width: 12%;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+.app-info-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-form-container {
+    width: 60%;
+    padding: 2rem;
+    margin: 2rem 6rem;
+}
+
+input.ng-touched.ng-invalid {
+    border: 1px solid red;
+    box-shadow: 0 0 13px inset rgba(255, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .info-form-container {
+        width: 100%;
+        margin: 1rem;
+    }
+}
