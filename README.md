@@ -42,3 +42,7 @@ password: kev02937@
 username: donero
 
 password: ewedon
+
+Diployment Link:
+
+cart-application-navy.vercel.app
