@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+Login credentials to login for cart and checkout service.
+1.
+username: johnd
+
+password: m38rmF$
+
+2.
+username: kevinryan
+
+password: kev02937@
+
+3.
+username: donero
+
+password: ewedon
